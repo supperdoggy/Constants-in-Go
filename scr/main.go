@@ -1,3 +1,29 @@
+/*
+	Summary
+
+	Immutable, but can be shadowed
+	Replaced by the compiler at the compile time
+		value must be calculable at the compile time
+	Named like variables
+		PascalCase for exported constants
+		cammelCase for internal constants
+	Typed constants work just like immutable variables
+		Can interoperate only with same type
+	Untyped constants work like literals
+		Can interoperate with similar types
+
+	Enumerated constants
+		Special symbol iota allows related constants to be created easily
+		Iota starts at 0 in each const block and increments by one
+		Wathc out of constants values that match zero values for variables
+	Enumerated expressions
+		Operations that can be determined at compile time are allowed
+			Arithmetic
+			Bitwise operations
+			Bitshifting
+
+*/
+
 package main
 
 import "fmt"
